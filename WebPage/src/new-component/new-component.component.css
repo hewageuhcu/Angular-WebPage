@@ -4,3 +4,13 @@ p{
     background-color: aqua;
     color:black
 }
+title{
+    position:center;
+    color:black;
+    background-color: bisque;
+    height:100px;
+    width:100%
+}
+h1{
+    color: blueviolet;
+}
