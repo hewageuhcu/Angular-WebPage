@@ -10,5 +10,5 @@ import {NewComponentComponent} from '../new-component/new-component.component'
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'WebPage';
+  title = 'Me😁';
 }
