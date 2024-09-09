@@ -10,11 +10,16 @@ import {NewComponentComponent} from '../new-component/new-component.component'
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+changeValue($event: Event) {
+throw new Error('Method not implemented.');
+}
 firstName = 'Me😁';
 imagePath="A.jpg";
 defaultVal="Chathurya"
 
-passValueToComponent(e){
-  console.log(e.target.value);
+passValueToComponent(e: Event) {
+  const inputElement = e.target as HTMLInputElement;
+  console.log(inputElement.value);
 }
+
 }
