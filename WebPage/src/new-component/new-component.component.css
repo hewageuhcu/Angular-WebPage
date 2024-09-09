@@ -14,3 +14,12 @@ title{
 h1{
     color: blueviolet;
 }
+body{
+    background-color: rgb(27, 25, 169);
+    width:100%;
+    height:200px;
+    color: azure;
+    position: relative;
+    
+    
+}
