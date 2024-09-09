@@ -13,5 +13,7 @@ export class AppComponent {
 firstName = 'Me😁';
 imagePath="A.jpg";
 
-passValueToComponent
+passValueToComponent(e){
+  console.log(e.target.value);
+}
 }
