@@ -10,5 +10,6 @@
 <input type="text" (input)="passValueToComponent($event)">
 
 <h2>two Way Binding</h2>
-<input type="text" [value]="defaultVal" (input)="changeValue($event)">
+<input type="text" [(ngModel)]="defaultVal" (input)="changeValue($event)">
+<span>{{defaultVal}}</span>
 
