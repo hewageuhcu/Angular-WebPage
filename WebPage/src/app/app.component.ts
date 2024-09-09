@@ -11,5 +11,7 @@ import {NewComponentComponent} from '../new-component/new-component.component'
 })
 export class AppComponent {
 firstName = 'Me😁';
-imagePath="A.jpg"
+imagePath="A.jpg";
+
+passValueToComponent
 }
