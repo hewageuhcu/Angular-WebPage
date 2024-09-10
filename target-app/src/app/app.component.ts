@@ -9,5 +9,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'target-app';
+  isApproved=false;
+  approve(status){
+    this.isApproved=status
+
+  }
 }

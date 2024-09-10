@@ -2,12 +2,12 @@
   <h2>Structural Directives - ngIf</h2>
   <div class="row">
   <div class="col-md-12">
-    <button class="btn btn-success">Approve</button>
-    <button class="btn btn-danger">Reject</button>
+    <button class="btn btn-success" (click)="approve(true)">Approve</button>
+    <button class="btn btn-danger" (click)="approve(false)">Reject</button>
   </div>
   <div class="col-md-12">
-    <p>Your application has been approved</p>
-    <P>Sorry, your applicatin has been rejected</P>
+    <p *ngIf="isApproved">Your application has been approved</p>
+    <P *ngIf="!isApproved">Sorry, your applicatin has been rejected</P>
   </div>
 </div>
 </div>
