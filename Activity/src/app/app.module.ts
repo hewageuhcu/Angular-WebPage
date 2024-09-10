@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule // Include FormsModule for two-way binding
+    FormsModule 
   ],
   providers: [],
  
