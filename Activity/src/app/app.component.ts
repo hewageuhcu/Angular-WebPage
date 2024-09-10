@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Activity';
+  numbers=[
+    'one',
+    'two',
+    'three',
+    'four'
+  ];
 }
