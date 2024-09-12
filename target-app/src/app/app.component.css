@@ -9,3 +9,15 @@ h2{
 .btn{
     width:130px;
 }
+.red{
+    color:white;
+    background-color:purple;
+}
+.green-color{
+    color:white;
+    background-color:green;
+}
+.blue{
+    color:white;
+    background-color:blue;
+}
