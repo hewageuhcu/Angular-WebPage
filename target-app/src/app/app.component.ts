@@ -26,4 +26,8 @@ export class AppComponent {
     this.isApproved=status;
 
   }
+  highlightColor='white';
+  highlight (color:string){
+   this.highlightColor=color; 
+  }
 }
