@@ -25,11 +25,20 @@
    <input type="number" name="luckynumber" [(ngModel)]="luckyNumber">
      </div>
      <div class="col-md-12" [ngSwitch]="luckyNumber">
-      <p>Strong</p>
-      <p>Weak</p>
-      <p>Intelligent</p>
-      <p>Brave</p>
+      <p *ngSwitchCase="1">Strong</p>
+      <p *ngSwitchCase="2">Weak</p>
+      <p *ngSwitchCase="3">Intelligent</p>
+      <p *ngSwitchCase="4">Brave</p>
+      <p *ngSwitchDefault>Enter numbers from 1 to 5</p>
 
      </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <p *ngFor="let number of number; let i=index">
+      <span *ngIf="(i+1)%2">{{i+1}}-{{number}}</span>
+    </p>
+  </div>
 </div>
 </div>
