@@ -27,7 +27,11 @@ export class AppComponent {
 
   }
   highlightColor='white';
+  isStyleApplied=false;
   highlight (color:string){
    this.highlightColor=color; 
+  }
+  toggleStyle(){
+    this.isStyleApplied=!this
   }
 }
