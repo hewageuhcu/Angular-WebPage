@@ -32,6 +32,6 @@ export class AppComponent {
    this.highlightColor=color; 
   }
   toggleStyle(){
-    this.isStyleApplied=!this
+    this.isStyleApplied=!this.isStyleApplied;
   }
 }
