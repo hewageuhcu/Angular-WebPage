@@ -15,4 +15,7 @@ channelName='Chathurya';
 
 constructor(){}
 
+sendMessageToParent(e: { target: { value: any; }; }){
+  console.log(e.target.value);
+}
 }
