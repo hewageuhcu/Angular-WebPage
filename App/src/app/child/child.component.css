@@ -1,0 +1,10 @@
+div{
+    background-color: rgb(8, 56, 21);
+    color: rgb(227, 213, 23);
+    min-height:300px;
+    padding:20px;
+}
+p{
+    font-size:24px;
+    font-weight:bold;
+}
