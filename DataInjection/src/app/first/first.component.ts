@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { ShapesService } from '../shapes.service';
 
 @Component({
   selector: 'app-first',
@@ -8,5 +9,16 @@ import { Component } from '@angular/core';
   styleUrl: './first.component.css'
 })
 export class FirstComponent {
+shape='';
+color='';
+shapeClass='';
 
+constructor(private shapeService:ShapeService){}
+
+ngOnInit():void{
+
+}
+drawShape(){
+  this.shapeClass-this.shapeService.getClassName(this.shape, this.color);
+}
 }
