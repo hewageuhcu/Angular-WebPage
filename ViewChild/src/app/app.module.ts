@@ -1,3 +1,5 @@
+import { input } from "@angular/core"
+
 <div>
 <p #channelName> Chathurya </p>
 <input type="text" #myInput ngModel>
