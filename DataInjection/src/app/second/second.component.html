@@ -3,8 +3,30 @@
     <div class="row">
         <div class="col-md-4">
 <div class="form-group">
-    
+    <select class="form-control" name="shape" [(ngModel)]="shape">
+        <option value="">Select Shape</option>
+        <option value="yellow">Yellow</option>
+        <option value="brown">Brown</option>
+        <option value="orange">Orange</option>
+    </select>
 </div>
         </div>
-    </div>
+        <div class="col-md-4">
+            <button
+              class="btn btn-primary"
+              (click)="drawShape()"
+              [disabled]="shape.length === 0 || color.length === 0"
+            >
+              Draw
+            </button>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col-md-12">
+            <div class="output">
+              <div class="shape {{shapeClass}}"></div>
+            </div>
+          </div>
+        </div>
     </div>
