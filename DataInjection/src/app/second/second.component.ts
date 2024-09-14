@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import {ShapesService} from '../shapes.serice';
+import {ShapeService} from '../shape.service';
 
 @Component({
   selector: 'app-second',
@@ -14,7 +14,7 @@ export class SecondComponent impelements OnInit {
   color='';
   shapeClass='';
 
-  constructor(private shapesService:ShapesService){}
+  constructor(private ShapeService:ShapeService){}
 
   ngOnInit():void{
 

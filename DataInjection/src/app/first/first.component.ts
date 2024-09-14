@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { ShapesService } from '../DataInjection.service';
+import { ShapeService } from '../shape.service';
 
 @Component({
   selector: 'app-first',

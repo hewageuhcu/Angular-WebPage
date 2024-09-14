@@ -6,4 +6,7 @@ import { Injectable } from '@angular/core';
 export class ShapeService {
 
   constructor() { }
+  get ClassName(shape,color){
+    return shape + '-' + color;
+  }
 }
