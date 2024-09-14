@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Copy": {
+    "angular-routing": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/copy",
+            "outputPath": "dist/angular-routing",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Copy:build:production"
+              "buildTarget": "angular-routing:build:production"
             },
             "development": {
-              "buildTarget": "Copy:build:development"
+              "buildTarget": "angular-routing:build:development"
             }
           },
           "defaultConfiguration": "development"

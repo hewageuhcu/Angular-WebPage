@@ -1,5 +1,5 @@
 {
-  "name": "copy",
+  "name": "angular-routing",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Copy": "node dist/copy/server/server.mjs"
+    "serve:ssr:angular-routing": "node dist/angular-routing/server/server.mjs"
   },
   "private": true,
   "dependencies": {
