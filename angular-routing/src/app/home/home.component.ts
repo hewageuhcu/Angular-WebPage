@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component,OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -9,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(private router:Router){}
+
+  ngOnInit():void{
+
+  }
+  goToProduct(){
+    console.log("Trying to update database...");
+    setTimeout(() =>{
+      console.log("Database is updated");
+      this.router.navigate(['product']);
+    },
+   2000 );
+  }
 }
