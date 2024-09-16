@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-template-driven',
-  standalone: true,
-  imports: [],
   templateUrl: './template-driven.component.html',
-  styleUrl: './template-driven.component.css'
+  styleUrls: ['./template-driven.component.css'],
 })
-export class TemplateDrivenComponent {
+export class TemplateDrivenComponent implements OnInit {
 
+  @ViewChild('myForm', {static: true}) myForm;
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  onSubmit(myForm) {
+    this.myForm.reset();
+  }
 }
